@@ -10,8 +10,15 @@ function frameIt() {
   })
 }
 
+function pressIt() {
+  $('input').on('keydown', function(e) {
+    if (e.key === 'g') {
+      alert('You have pressed "g"')
+    }
+  })
+}
+
 $(document).ready(function(){
-
-getIt()
-
+  getIt()
+  frameIt()
 });
